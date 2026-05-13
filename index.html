@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
-        /* References the banner.jpg file located on your Desktop */
         .hero-banner {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('banner.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('banner.jpg');
             background-size: cover;
             background-position: center;
         }
-        .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
-        .project-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans leading-normal">
 
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold text-blue-600 uppercase tracking-tighter text-shadow-sm">Pavan Sampath Kala</span>
+            <span class="text-xl font-bold text-blue-600 uppercase tracking-tighter">Pavan Sampath Kala</span>
             <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
@@ -37,16 +36,16 @@
     </nav>
 
     <header id="about" class="pt-48 pb-32 px-6 hero-banner text-white text-center">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight italic">Pavan Sampath Kala</h1>
-            <p class="text-2xl text-blue-400 font-bold mb-8 uppercase tracking-widest">BSc Computing Science @ University of Alberta</p>
+            <p class="text-2xl text-blue-400 font-bold mb-8 uppercase tracking-widest text-shadow-lg">BSc Computing Science @ University of Alberta</p>
             <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed italic">
-                Aspiring Data Analyst with hands-on experience in Python, Power BI, and Tableau. 
-                Bridging the gap between software engineering logic and actionable data storytelling.
+                Aspiring Data Analyst bridging the gap between software engineering logic and actionable data storytelling. 
+                Expertise in Python, SQL, and Business Intelligence.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="#projects" class="px-8 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition shadow-lg">View Data Projects</a>
-                <a href="mailto:pavansampath19@gmail.com" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold hover:bg-white/20 transition shadow-lg">Email Me</a>
+                <a href="mailto:pavansampath19@gmail.com" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-bold hover:bg-white/20 transition shadow-lg">Contact Me</a>
             </div>
         </div>
     </header>
@@ -58,13 +57,13 @@
                 <div class="relative mb-12">
                     <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[42px] top-2 border-4 border-white shadow-sm"></div>
                     <div class="flex flex-col md:flex-row justify-between mb-2">
-                        <h3 class="text-xl font-bold italic">Teaching Assistant</h3>
+                        <h3 class="text-xl font-bold italic text-slate-800">Teaching Assistant</h3>
                         <span class="text-slate-500 font-medium italic">2025 - Present</span>
                     </div>
                     <p class="text-blue-600 font-semibold mb-3 italic text-sm">University of Alberta, Canada</p>
                     <ul class="list-disc list-outside ml-4 space-y-2 text-slate-600 italic">
-                        <li>Currently serving as a Teaching Assistant for the INT D 101 course at the University of Alberta.</li>
-                        <li>Assisting students and professors through seminars, grading assignments, and providing academic support.</li>
+                        <li>Assisting instruction for INT D 101, managing seminars and grading for undergraduate students.</li>
+                        <li>Simplifying complex technical concepts to improve student learning outcomes and engagement.</li>
                     </ul>
                 </div>
             </div>
@@ -76,47 +75,61 @@
             <h2 class="text-4xl font-black mb-16 text-center tracking-tight uppercase italic text-blue-900 leading-tight">Project Portfolio</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://github.com/psk2004/Airbnb-Sales-Analysis-Dashboard-in-Tableau-" target="_blank" class="bg-white rounded-2xl border border-slate-200 project-card p-8 block text-left">
+                
+                <div class="bg-white rounded-2xl border-2 border-blue-200 project-card overflow-hidden flex flex-col">
+                    <img src="https://raw.githubusercontent.com/psk2004/Risk-Calculator-for-Workforce-Displacement-due-to-Artificial-Intelligence/main/AI%20Workforce%20Risk%20Calculator.png" alt="AI Risk Calculator" class="w-full h-48 object-cover border-b border-blue-100">
+                    <div class="p-8 flex-grow">
+                        <div class="text-blue-600 font-bold text-xs uppercase mb-2 italic">Streamlit Deployment</div>
+                        <h4 class="font-bold text-xl mb-4 text-slate-900 italic">AI Workforce Risk & Opportunity Calculator</h4>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">Interactive tool forecasting automation risks through 2026 and identifying <strong>+48.2% wage premiums</strong> for AI-proficient roles.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-[10px] font-bold text-blue-600 uppercase">Python</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 rounded-full text-[10px] font-bold text-slate-600 uppercase">Streamlit</span>
+                        </div>
+                        <a href="https://github.com/psk2004/Risk-Calculator-for-Workforce-Displacement-due-to-Artificial-Intelligence" target="_blank" class="inline-block text-sm font-bold text-blue-600 hover:underline">View Source Code &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 project-card p-8 flex flex-col">
                     <div class="text-blue-600 font-bold text-xs uppercase mb-2 italic">Tableau Visualization</div>
-                    <h4 class="font-bold text-xl mb-4 text-slate-900 leading-tight italic">Airbnb Sales Analysis Dashboard</h4>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">Revealed key location-based trends by analyzing sales performance for 100+ Airbnbs.</p>
-                    <span class="px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-[10px] font-bold text-blue-600 uppercase">Business Intelligence</span>
-                </a>
+                    <h4 class="font-bold text-xl mb-4 text-slate-900 italic">Airbnb Sales Analysis Dashboard</h4>
+                    <p class="text-slate-600 text-sm mb-6 italic">Revealed location-based trends by analyzing sales performance for 100+ Airbnbs.</p>
+                    <span class="px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-[10px] font-bold text-blue-600 uppercase w-fit mb-6">Business Intelligence</span>
+                    <a href="https://github.com/psk2004/Airbnb-Sales-Analysis-Dashboard-in-Tableau-" target="_blank" class="mt-auto text-sm font-bold text-blue-600 hover:underline">View Source Code &rarr;</a>
+                </div>
 
-                <a href="https://github.com/psk2004/Workforce-Turnover-Power-BI" target="_blank" class="bg-white rounded-2xl border border-slate-200 project-card p-8 block text-left">
+                <div class="bg-white rounded-2xl border border-slate-200 project-card p-8 flex flex-col">
                     <div class="text-orange-600 font-bold text-xs uppercase mb-2 italic">Power BI Analysis</div>
-                    <h4 class="font-bold text-xl mb-4 text-slate-900 leading-tight italic">Workforce Turnover Insights</h4>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">Comprehensive dashboard analyzing turnover rates for 1,000+ employees by demographics and satisfaction.</p>
-                    <span class="px-3 py-1 bg-orange-50 border border-orange-100 rounded-full text-[10px] font-bold text-orange-600 uppercase">HR Analytics</span>
-                </a>
+                    <h4 class="font-bold text-xl mb-4 text-slate-900 italic">Workforce Turnover Insights</h4>
+                    <p class="text-slate-600 text-sm mb-6 italic">Comprehensive dashboard analyzing turnover rates for 1,000+ employees.</p>
+                    <span class="px-3 py-1 bg-orange-50 border border-orange-100 rounded-full text-[10px] font-bold text-orange-600 uppercase w-fit mb-6">HR Analytics</span>
+                    <a href="https://github.com/psk2004/Workforce-Turnover-Power-BI" target="_blank" class="mt-auto text-sm font-bold text-blue-600 hover:underline">View Source Code &rarr;</a>
+                </div>
 
-                <a href="https://github.com/NeuralCureNAT/MigraineMinder" target="_blank" class="bg-white rounded-2xl border border-slate-200 project-card p-8 block text-left">
+                <div class="bg-white rounded-2xl border border-slate-200 project-card p-8 flex flex-col">
                     <div class="text-purple-600 font-bold text-xs uppercase mb-2 italic">natHacks 2025</div>
-                    <h4 class="font-bold text-xl mb-4 text-slate-900 leading-tight italic">Migraine Minder System</h4>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed italic text-blue-800">Developed a real-time severity prediction system using EEG, heart rate, and GSR signals.</p>
-                    <span class="px-3 py-1 bg-purple-50 border border-purple-100 rounded-full text-[10px] font-bold text-purple-600 uppercase text-shadow-sm">Machine Learning</span>
-                </a>
+                    <h4 class="font-bold text-xl mb-4 text-slate-900 italic">Migraine Minder System</h4>
+                    <p class="text-slate-600 text-sm mb-6 italic">Developed a real-time severity prediction system using EEG and GSR signals.</p>
+                    <span class="px-3 py-1 bg-purple-50 border border-purple-100 rounded-full text-[10px] font-bold text-purple-600 uppercase w-fit mb-6">Machine Learning</span>
+                    <a href="https://github.com/NeuralCureNAT/MigraineMinder" target="_blank" class="mt-auto text-sm font-bold text-blue-600 hover:underline">View Source Code &rarr;</a>
+                </div>
 
-                <a href="https://github.com/psk2004/Student-s-Responses-Data-Analysis" target="_blank" class="bg-white rounded-2xl border border-slate-200 project-card p-8 block text-left">
-                    <div class="text-blue-500 font-bold text-xs uppercase mb-2 italic">Python Analysis</div>
-                    <h4 class="font-bold text-xl mb-4 text-slate-900 leading-tight italic">Student Response Analytics</h4>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed italic text-blue-800 uppercase">Analysed responses from 300+ students on their pandemic routines using Python.</p>
-                    <span class="px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-[10px] font-bold text-blue-600 uppercase shadow-sm">Data Science</span>
-                </a>
+                <div class="bg-white rounded-2xl border border-slate-200 project-card p-8 flex flex-col">
+                    <div class="text-emerald-600 font-bold text-xs uppercase mb-2 italic">Python Analysis</div>
+                    <h4 class="font-bold text-xl mb-4 text-slate-900 italic">Student Response Analytics</h4>
+                    <p class="text-slate-600 text-sm mb-6 italic">Analyzed pandemic routines for 300+ students using advanced Python libraries.</p>
+                    <span class="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-[10px] font-bold text-emerald-600 uppercase w-fit mb-6">Data Science</span>
+                    <a href="https://github.com/psk2004/Student-s-Responses-Data-Analysis" target="_blank" class="mt-auto text-sm font-bold text-blue-600 hover:underline">View Source Code &rarr;</a>
+                </div>
 
-                <a href="https://github.com/psk2004/Video-Games-Popularity-Analysis" target="_blank" class="bg-white rounded-2xl border border-slate-200 project-card p-8 block text-left">
-                    <div class="text-red-600 font-bold text-xs uppercase mb-2 italic uppercase">Exploratory Analysis</div>
-                    <h4 class="font-bold text-xl mb-4 text-slate-900 leading-tight italic text-blue-800">Video Game Performance Analysis</h4>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">Conducted EDA uncovering insights into the popularity of 200+ video games for developers.</p>
-                    <span class="px-3 py-1 bg-red-50 border border-red-100 rounded-full text-[10px] font-bold text-red-600 uppercase shadow-sm">EDA</span>
-                </a>
+                <div class="bg-white rounded-2xl border border-slate-200 project-card p-8 flex flex-col">
+                    <div class="text-red-600 font-bold text-xs uppercase mb-2 italic">Software Engineering</div>
+                    <h4 class="font-bold text-xl mb-4 text-slate-900 italic uppercase">Tappit: Event Management</h4>
+                    <p class="text-slate-600 text-sm mb-6 italic">Android lottery application featuring interactive filtering and admin dashboards.</p>
+                    <span class="px-3 py-1 bg-red-50 border border-red-100 rounded-full text-[10px] font-bold text-red-600 uppercase w-fit mb-6">Android Development</span>
+                    <a href="https://github.com/tappit301/TAPPIT301F25" target="_blank" class="mt-auto text-sm font-bold text-blue-600 hover:underline">View Source Code &rarr;</a>
+                </div>
 
-                <a href="https://github.com/tappit301/TAPPIT301F25" target="_blank" class="bg-white rounded-2xl border border-slate-200 project-card p-8 block text-left">
-                    <div class="text-emerald-600 font-bold text-xs uppercase mb-2 italic">CMPUT 301 Project</div>
-                    <h4 class="font-bold text-xl mb-4 text-slate-900 leading-tight italic uppercase text-blue-800">Tappit: Event Management</h4>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">Android lottery application featuring interactive filtering and admin dashboard functionality.</p>
-                    <span class="px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-[10px] font-bold text-emerald-600 uppercase italic shadow-sm">Software Engineering</span>
-                </a>
             </div>
         </div>
     </section>
@@ -126,23 +139,23 @@
             <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-blue-900 italic">Technical Toolbox</h2>
             <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
                 <div class="space-y-2"><i class="fa-brands fa-python text-4xl text-blue-500"></i><p class="font-bold italic uppercase">Python</p></div>
-                <div class="space-y-2"><i class="fa-solid fa-database text-4xl text-slate-700"></i><p class="font-bold italic uppercase">MySQL</p></div>
-                <div class="space-y-2"><i class="fa-solid fa-chart-line text-4xl text-orange-500 text-shadow-sm"></i><p class="font-bold italic uppercase">Power BI</p></div>
+                <div class="space-y-2"><i class="fa-solid fa-database text-4xl text-slate-700"></i><p class="font-bold italic uppercase">SQL</p></div>
+                <div class="space-y-2"><i class="fa-solid fa-chart-line text-4xl text-orange-500"></i><p class="font-bold italic uppercase">Power BI</p></div>
                 <div class="space-y-2"><i class="fa-solid fa-table-columns text-4xl text-blue-400"></i><p class="font-bold italic uppercase">Tableau</p></div>
                 <div class="space-y-2"><i class="fa-solid fa-file-excel text-4xl text-green-600"></i><p class="font-bold italic uppercase">Excel</p></div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-24 px-6 text-center border-t border-slate-800">
+    <footer class="bg-slate-900 text-white py-24 px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-bold mb-8 italic">Pavan Sampath Kala</h2>
             <div class="flex justify-center space-x-10 mb-12 text-3xl">
-                <a href="mailto:pavansampath19@gmail.com" class="hover:text-blue-400 transition shadow-sm"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/pavanskala/" target="_blank" class="hover:text-blue-400 transition shadow-sm"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/psk2004" target="_blank" class="hover:text-blue-400 transition shadow-sm"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:pavansampath19@gmail.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/pavanskala/" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/psk2004" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-github"></i></a>
             </div>
-            <p class="text-slate-500 text-sm font-medium tracking-widest uppercase italic">© 2026 | 8258890159 | University of Alberta</p>
+            <p class="text-slate-500 text-sm font-medium tracking-widest uppercase italic">© 2026 | University of Alberta</p>
         </div>
     </footer>
 
